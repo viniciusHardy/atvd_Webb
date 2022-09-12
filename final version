@@ -1,0 +1,31 @@
+create database puc4;
+use puc4;
+
+create table materia(
+    materia varchar(30),
+    ID int,
+    RA int,
+    RP varchar(10)
+);
+create table aluno(
+    RA int,
+    nome varchar(30),
+    curso varchar(30) 
+);
+create table professores(
+    nomep varchar(30),
+    RP varchar(10),
+    materia varchar(30)
+);
+insert into materia(materia, ID, RA, RP) values ("programacao", 2345, 22001129, "P965765");
+insert into materia(materia, ID, RA, RP) values ("web", 1586, 22001130, "P968372");
+insert into aluno(RA,nome,curso) values ("22004723","luisa kruszczynski garcia","direito");
+insert into aluno(RA,nome,curso) values ("22015247","vinicius hardy barros","engenharia da comp.");
+insert into professores(nomep,RP,materia) values ("leandro alonso xastre","P968372","web");
+insert into professores(nomep,RP,materia) values ("natalia montezori","P382964","direito penal");
+
+
+
+select * from materia;
+select * from aluno;
+select * from professores;
