@@ -1,0 +1,22 @@
+create database puc4;
+use puc4;
+
+create table materia(
+    materia varchar(30),
+    ID int,
+    RA int,
+    RP varchar(10)
+);
+create table aluno(
+    RA int,
+    nome varchar(30),
+    curso varchar(30) 
+);
+create table professores(
+    nomep varchar(30),
+    RP varchar(10),
+    materia varchar(30)
+);
+select * from materia;
+select * from aluno;
+select * from professores;
