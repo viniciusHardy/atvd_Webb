@@ -1,0 +1,24 @@
+create database Tabela2;
+use Tabela2alunosNome;
+create table aluno (
+    aluno int,
+    RA varchar(20),
+    Nome varchar(20),
+    Sobrenome varchar(20)
+);
+
+insert into aluno(RA,Nome,Sobrenome)
+values (22015247,Vinicius,Hardy);
+
+create table Materia (
+materia int,
+ID_Materia varchar(20),
+Nome varchar (20),
+Quantidade_Creditos varchar (20)
+);
+
+create table Professor (
+Professor int,
+RP varchar(20),
+Professor varchar(20)
+);
